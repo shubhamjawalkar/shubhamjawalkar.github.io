@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #f2f4f8;
-    color: #333;
+    background: #f3f4f6;
+    color: #111827;
 }
 
 .container {
@@ -23,24 +23,50 @@ section {
 h3 {
     font-size: 26px;
     margin-bottom: 20px;
-    color: #0a66c2;
+    color: #1f2937;
 }
 
 /* HERO */
 .hero {
     display: flex;
     gap: 40px;
-    background: #ffffff;
+    background: #1f2937;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 14px;
     align-items: center;
+    color: #ffffff;
+}
+
+.hero-left {
+    text-align: center;
 }
 
 .hero-left img {
     width: 200px;
     height: 200px;
-    border-radius: 12px;
+    border-radius: 14px;
     object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
 }
 
 .hero-right h1 {
@@ -49,23 +75,29 @@ h3 {
 
 .hero-right h2 {
     font-weight: 400;
-    color: #555;
+    color: #d1d5db;
     margin: 8px 0;
 }
 
 .hero-right p {
     margin: 15px 0;
     line-height: 1.6;
+    color: #e5e7eb;
 }
 
 .btn {
     display: inline-block;
-    background: #0a66c2;
-    color: #fff;
-    padding: 12px 22px;
+    background: #e11d48;
+    color: #ffffff;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #be123c;
 }
 
 /* GRID */
@@ -76,27 +108,29 @@ h3 {
 }
 
 .card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
     font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* EXPERIENCE */
 .timeline {
     background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .timeline h4 {
-    color: #0a66c2;
+    color: #1f2937;
 }
 
 .timeline span {
     font-size: 14px;
-    color: #777;
+    color: #6b7280;
 }
 
 .timeline ul {
@@ -107,9 +141,28 @@ h3 {
 /* FOOTER */
 footer {
     text-align: center;
-    color: #555;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
+    color: #6b7280;
+    padding-top: 30px;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* FOOTER SOCIAL */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
 }
 
 /* MOBILE */
