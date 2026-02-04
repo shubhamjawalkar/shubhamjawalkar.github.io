@@ -26,7 +26,7 @@ h3 {
     color: #1f2937;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     display: flex;
     gap: 40px;
@@ -49,26 +49,6 @@ h3 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
-/* SOCIAL LINKS */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin-top: 14px;
-}
-
-.social-links img {
-    width: 32px;
-    height: 32px;
-    filter: brightness(0) invert(1);
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-links img:hover {
-    transform: scale(1.15);
-    opacity: 0.85;
-}
-
 .hero-right h1 {
     font-size: 36px;
 }
@@ -81,8 +61,9 @@ h3 {
 
 .hero-right p {
     margin: 15px 0;
-    line-height: 1.6;
+    line-height: 1.65;
     color: #e5e7eb;
+    max-width: 720px;
 }
 
 .btn {
@@ -100,7 +81,7 @@ h3 {
     background: #be123c;
 }
 
-/* GRID */
+/* ================= GRID (SKILLS) ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -109,13 +90,13 @@ h3 {
 
 .card {
     background: #ffffff;
-    padding: 16px;
+    padding: 18px 20px;
     border-radius: 10px;
     font-weight: 500;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* EXPERIENCE */
+/* ================= EXPERIENCE ================= */
 .timeline {
     background: #ffffff;
     padding: 20px;
@@ -135,10 +116,64 @@ h3 {
 
 .timeline ul {
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
-/* FOOTER */
+.timeline ul li {
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card h4 {
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.project-card ul {
+    padding-left: 18px;
+}
+
+.project-card ul li {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.project-card h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 8px;
+}
+
+.project-card span {
+    font-size: 13px;
+    color: #16a34a;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
     color: #6b7280;
@@ -146,7 +181,6 @@ footer {
     border-top: 1px solid #e5e7eb;
 }
 
-/* FOOTER SOCIAL */
 .footer-social {
     display: flex;
     justify-content: center;
@@ -165,52 +199,16 @@ footer {
     opacity: 0.85;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
     }
-}
-/* PROJECTS */
-.project-card h4 {
-    margin-bottom: 8px;
-    color: #1f2937;
-}
-
-.project-card p {
-    font-size: 14px;
-    color: #374151;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.project-card span {
-    font-size: 13px;
-    color: #22c55e;
-    font-weight: 600;
-}
-
-
-/* PROJECT GRID FIX */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    gap: 24px;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.project-card ul {
-    padding-left: 18px;
-}
-
-.project-card h5 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1f2937;
 }
