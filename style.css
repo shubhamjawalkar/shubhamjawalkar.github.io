@@ -191,3 +191,26 @@ footer {
     font-weight: 600;
 }
 
+
+/* PROJECT GRID FIX */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card ul {
+    padding-left: 18px;
+}
+
+.project-card h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+}
