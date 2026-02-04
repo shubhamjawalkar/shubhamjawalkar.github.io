@@ -172,3 +172,22 @@ footer {
         text-align: center;
     }
 }
+/* PROJECTS */
+.project-card h4 {
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.project-card span {
+    font-size: 13px;
+    color: #22c55e;
+    font-weight: 600;
+}
+
