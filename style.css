@@ -173,6 +173,19 @@ h3 {
     margin-top: 6px;
 }
 
+.project-card span {
+    display: block;
+    margin: 8px 0 15px 0;
+    color: #1ea54c;   /* Green */
+    font-weight: 500;
+}
+
+.project-card h5 {
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 /* ================= FOOTER ================= */
 footer {
     text-align: center;
@@ -212,3 +225,4 @@ footer {
         text-align: center;
     }
 }
+
