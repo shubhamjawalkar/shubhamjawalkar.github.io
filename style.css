@@ -1,3 +1,4 @@
+/* ================= GLOBAL ================= */
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +18,12 @@ body {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 h3 {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #1f2937;
 }
 
@@ -35,10 +36,6 @@ h3 {
     border-radius: 14px;
     align-items: center;
     color: #ffffff;
-}
-
-.hero-left {
-    text-align: center;
 }
 
 .hero-left img {
@@ -81,7 +78,7 @@ h3 {
     background: #be123c;
 }
 
-/* ================= GRID (SKILLS) ================= */
+/* ================= SKILLS GRID ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -99,7 +96,7 @@ h3 {
 /* ================= EXPERIENCE ================= */
 .timeline {
     background: #ffffff;
-    padding: 20px;
+    padding: 22px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -107,6 +104,7 @@ h3 {
 
 .timeline h4 {
     color: #1f2937;
+    margin-bottom: 4px;
 }
 
 .timeline span {
@@ -120,80 +118,50 @@ h3 {
 }
 
 .timeline ul li {
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 6px;
-}
-
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    max-width: 900px;   /* controls width */
-    margin: 0 auto;     /* centers the cards */
-}
-
-.project-card {
-    background: #f7f7f7;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-.project-card h4 {
-    font-size: 22px;
-    margin-bottom: 6px;
-}
-
-.project-card span {
-    display: block;
-    margin-bottom: 18px;
-    color: #1ea54c;
-    font-weight: 500;
-}
-
-.project-card h5 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.project-card ul {
-    margin-left: 18px;
-    margin-bottom: 18px;
-}
-
-.project-card p {
-    line-height: 1.7;
-    margin-bottom: 15px;
 }
 
 /* ================= PROJECTS ================= */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 26px;
+    gap: 30px;
 }
 
 .project-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
+    min-height: 420px; /* Equal height */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .project-card h4 {
     font-size: 18px;
     color: #1f2937;
+    margin-bottom: 8px;
 }
 
 .project-card p {
     font-size: 14px;
     color: #374151;
     line-height: 1.6;
+    margin-bottom: 12px;
 }
 
 .project-card ul {
     padding-left: 18px;
+    margin-bottom: 12px;
 }
 
 .project-card ul li {
@@ -207,26 +175,14 @@ h3 {
     font-size: 14px;
     font-weight: 600;
     color: #1f2937;
-    margin-top: 8px;
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
 .project-card span {
+    margin-top: auto;
     font-size: 13px;
     color: #16a34a;
-    font-weight: 600;
-    margin-top: 6px;
-}
-
-.project-card span {
-    display: block;
-    margin: 8px 0 15px 0;
-    color: #1ea54c;   /* Green */
-    font-weight: 500;
-}
-
-.project-card h5 {
-    margin-top: 18px;
-    font-size: 15px;
     font-weight: 600;
 }
 
@@ -256,7 +212,7 @@ footer {
     opacity: 0.85;
 }
 
-/* ================= MOBILE ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
     .projects-grid {
         grid-template-columns: 1fr;
@@ -269,5 +225,3 @@ footer {
         text-align: center;
     }
 }
-
-
